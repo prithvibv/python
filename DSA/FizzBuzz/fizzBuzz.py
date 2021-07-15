@@ -1,12 +1,12 @@
-# fizz buzz
-# multiples of 3 Fizz
-# multiples of 5 Buzz
-# multiples of 3 & 5 FizzBuzz
-# return a vector
-# https://www.geeksforgeeks.org/fizz-buzz-implementation/
+# Fizz Buzz
+# For a given range example 1 to 50
+# For multiples of 3 insert Fizz
+# For multiples of 5 insert Buzz
+# For multiples of 3 & 5 insert FizzBuzz
+# return the list
 # important point to remember mutliples of 3 and 5 can be found by doing % 15 and would save one if condition
 
-
+#Function to process input which validates the given input is greater than 1 and its an integer
 def processInput(input):
     inputType = type(input)
     print(inputType)
