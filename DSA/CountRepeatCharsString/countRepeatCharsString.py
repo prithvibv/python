@@ -1,6 +1,6 @@
-#Count repeated chars in a String
+#Count repeated chars in a character array
 #learnings: initialize the list with zero and specify the size charCounter = [0] * 256
-# ord() --> retruns unicode value used here to get ascii value
+# ord() --> returns unicode value used here to get ascii value
 # chr() --> returns char for ascii value
 # print does not concatenate string with int, we need to use to str() to convert to string
 
