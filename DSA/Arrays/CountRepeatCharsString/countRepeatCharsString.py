@@ -1,6 +1,6 @@
 # Count repeated chars in an input array
 
-# Concept: Keep an array of size 256 and initialize it to zero, when the string is parsed for every character that is read increment the count, for characters whose count greater than 1, the characters are repeated
+# Concept: Keep an array of size 256 (characters range) and initialize it to zero, when the string is parsed for every character that is read increment the count, for characters whose count greater than 1, the characters are repeated
 
 #  Learnings: Initialize the list with zero and specify the size charCounter = [0] * 256
 # ord() --> input: character, output: unicode value (ASCII value).
