@@ -163,3 +163,4 @@ print(resultList) """
 #today's learnings , list starts at 0, remove element at index use del list[index], nomral insert(index,value), it will not replace it will move the list to the left example ['Fizz', 1, 2, 3, 4, 5, 6, 7, 8, 9] insert at zero position
 
 
+{"mode":"full","isActive":false}

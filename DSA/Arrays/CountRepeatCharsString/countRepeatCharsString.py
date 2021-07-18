@@ -5,11 +5,13 @@
 #  Learnings: Initialize the list with zero and specify the size charCounter = [0] * 256
 # ord() --> input: character, output: unicode value (ASCII value).
 # chr() --> input: ASCII value, output: character
-# Print does not concatenate string with int, we need to use to str() to convert to string
+# print() does not concatenate string with int, we need to use to str() to convert the int to string
+# len() --> length of the collection
 
 def countRepeatCharsString(inputString):
     charCounter = [0] * 256
     for i in range(len(inputString)):
+        #Find the ascii value of the character, increment the corresponding index by one.
         c = ord(inputString[i])
         charCounter[c] += 1
 
