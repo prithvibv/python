@@ -1,8 +1,11 @@
-#Count repeated chars in a character array
-#learnings: initialize the list with zero and specify the size charCounter = [0] * 256
-# ord() --> returns unicode value used here to get ascii value
-# chr() --> returns char for ascii value
-# print does not concatenate string with int, we need to use to str() to convert to string
+# Count repeated chars in the input array
+
+# Concept: Keep an array of size 256 and initialize it to zero, when the string is parsed for every character that is read increment the count, for characters whose count greater than 1, the characters are repeated
+
+#  Learnings: Initialize the list with zero and specify the size charCounter = [0] * 256
+# ord() --> input: character, output: unicode value (ASCII value).
+# chr() --> input: ASCII value, output: character
+# Print does not concatenate string with int, we need to use to str() to convert to string
 
 def countRepeatCharsString(inputString):
     charCounter = [0] * 256
