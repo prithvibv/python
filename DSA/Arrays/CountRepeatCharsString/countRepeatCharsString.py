@@ -17,5 +17,5 @@ def countRepeatCharsString(inputString):
 
 
 input = ['n','a','v','a','n','e','e','t','h','a']
-papa = ['p','r','i','t','h','v','i']
+input2 = ['p','r','i','t','h','v','i']
 countRepeatCharsString(input)
