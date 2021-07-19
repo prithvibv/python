@@ -42,21 +42,21 @@ def fizzBuzzv2(inputRange):
 result = fizzBuzzv2(35)
 print(result)
 
-"""
-#Profiling info
-import cProfile
-cProfile.run('fizzBuzzv2(1000)')
 
-1006 function calls in 0.001 seconds
+""" #Profiling info
+import cProfile
+cProfile.run('fizzBuzzv2(10000000)') """
+"""
+10000006 function calls in 4.131 seconds
 
    Ordered by: standard name
 
-   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        1    0.000    0.000    0.001    0.001 <string>:1(<module>)
-        1    0.000    0.000    0.001    0.001 fizzBuzzType1v2.py:11(processInput)
-        1    0.000    0.000    0.001    0.001 fizzBuzzType1v2.py:26(fizzBuzzv2)
-        1    0.000    0.000    0.001    0.001 {built-in method builtins.exec}
-        2    0.001    0.000    0.001    0.000 {built-in method builtins.print}
-      999    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)     
+        1    0.075    0.075    4.131    4.131 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 fizzBuzzType1v2.py:11(processInput)
+        1    3.083    3.083    4.056    4.056 fizzBuzzType1v2.py:26(fizzBuzzv2)
+        1    0.000    0.000    4.131    4.131 {built-in method builtins.exec}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+  9999999    0.972    0.000    0.972    0.000 {method 'append' of 'list' objects}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
  """

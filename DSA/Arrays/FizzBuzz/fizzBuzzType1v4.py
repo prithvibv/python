@@ -40,3 +40,22 @@ def fizzBuzzv4(inputRange):
 
 result = fizzBuzzv4(50)
 print(result)
+"""
+#Profiling info
+import cProfile
+cProfile.run('fizzBuzzv4(10000000)')
+
+ 10000006 function calls in 4.393 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.077    0.077    4.393    4.393 <string>:1(<module>)
+        1    3.269    3.269    4.315    4.315 fizzBuzzType1v4.py:20(fizzBuzzv4)
+        1    0.000    0.000    0.001    0.001 fizzBuzzType1v4.py:7(processInput)
+        1    0.000    0.000    4.393    4.393 {built-in method builtins.exec}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+  9999999    1.046    0.000    1.046    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+ """
+
