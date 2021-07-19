@@ -8,6 +8,9 @@
 # print() does not concatenate string with int, we need to use to str() to convert the int to string
 # len() --> length of the collection
 
+#Improvement:
+#1. to consider from small case a to capital case A, based on the input we have to decide the character set, then instead of 256 characters array we can keep limited character set.It would save memory.
+
 def countRepeatCharsString(inputString):
     charCounter = [0] * 256
     for i in range(len(inputString)):
