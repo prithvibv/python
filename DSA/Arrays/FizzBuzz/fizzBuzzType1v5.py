@@ -26,7 +26,7 @@ def fizzBuzzv5(inputRange):
     for i in range(inputRange):
         #print(i,end=" ")
         resultList.insert(i,i)
-    print(resultList)
+    #print(resultList)
 
     for i in range(0,inputRange,3):
         if(i == 0):
@@ -49,5 +49,22 @@ def fizzBuzzv5(inputRange):
         del resultList[i]
         resultList.insert(i,"Fizz Buzz")
 
-    print(resultList)
+    #print(resultList)
 fizzBuzzv5(50)
+#Profiling with 1 lakh input, extrapolation for 1 crore inputs would be 182 seconds
+""" import cProfile
+cProfile.run('fizzBuzzv5(100000)') """
+
+"""
+         160002 function calls in 1.822 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.001    0.001    1.822    1.822 <string>:1(<module>)
+        1    0.626    0.626    1.820    1.820 fizzBuzzType1v5.py:22(fizzBuzzv5)
+        1    0.000    0.000    1.822    1.822 {built-in method builtins.exec}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+   159998    1.194    0.000    1.194    0.000 {method 'insert' of 'list' objects}
+"""
+
