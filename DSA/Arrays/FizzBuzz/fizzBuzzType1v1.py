@@ -50,21 +50,21 @@ for x in range(len(result)):
     print(x, end =" ")
     print(result[x], end =" ")
 
-""" 
+"""
 #Profiling info
 import cProfile
-cProfile.run('fizzBuzz(1000)')
+cProfile.run('fizzBuzz(10000000)')
 
-1006 function calls in 0.002 seconds
+       10000006 function calls in 3.848 seconds
 
    Ordered by: standard name
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        1    0.000    0.000    0.002    0.002 <string>:1(<module>)
+        1    0.073    0.073    3.848    3.848 <string>:1(<module>)
         1    0.000    0.000    0.001    0.001 fizzBuzzType1v1.py:11(processInput)
-        1    0.001    0.001    0.002    0.002 fizzBuzzType1v1.py:25(fizzBuzz)
-        1    0.000    0.000    0.002    0.002 {built-in method builtins.exec}
+        1    2.802    2.802    3.775    3.775 fizzBuzzType1v1.py:25(fizzBuzz)
+        1    0.000    0.000    3.848    3.848 {built-in method builtins.exec}
         2    0.001    0.000    0.001    0.000 {built-in method builtins.print}
-      999    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+  9999999    0.972    0.000    0.972    0.000 {method 'append' of 'list' objects}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
  """
