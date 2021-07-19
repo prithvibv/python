@@ -7,6 +7,8 @@
 #The idea is obtained from input analysis
 #Say input from 1 to 50 , in the previous program fizzBuzz, for all the inputs 1 to 50, all the three if conditions are run, in order to minimise the execution, %3 if condition is placed first, %5 condition is second, %3 and %5 is placed inside %5 which would save around 40 if condition checks.
 
+#improvements: think of using insert instead of append it may save speed.
+
 #Function to validate input type and to check if input greater than one.
 def processInput(input):
     inputType = type(input)
