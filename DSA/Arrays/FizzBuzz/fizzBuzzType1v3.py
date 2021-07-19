@@ -38,3 +38,21 @@ def fizzBuzzv3(inputRange):
 
 result = fizzBuzzv3(35)
 print(result)
+
+"""
+#Profiling info
+import cProfile
+cProfile.run('fizzBuzzv3(10000)')
+
+         10006 function calls in 0.010 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.009    0.009 <string>:1(<module>)
+        1    0.000    0.000    0.001    0.001 fizzBuzzType1v3.py:10(processInput)
+        1    0.007    0.007    0.009    0.009 fizzBuzzType1v3.py:23(fizzBuzzv3)
+        1    0.000    0.000    0.010    0.010 {built-in method builtins.exec}
+        2    0.001    0.000    0.001    0.000 {built-in method builtins.print}
+     9999    0.002    0.000    0.002    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects} """
