@@ -11,6 +11,7 @@ Base 5 allowed digits is 0,1,2,3,4
 #16/5 = 3   , r = 1
 #answer 3134
 
+#combining digits in the list
 def listToInt(ip):
     r = ""
     for i in ip:
@@ -27,32 +28,26 @@ def base5Number(inputNumber):
     result.reverse()
     return listToInt(result)
 
-ip = 10
+#ip = 10
 
-for i in range(ip):
+""" for i in range(ip):
     #print(ipi)
-    print(base5Number(i))
+    print(base5Number(i)) """
 
-""" def fizzBuzz(inputValue):
+def fizzBuzz(inputRange):
     resultList = []
-    for i in range(0,inputValue):
-        result = i
-        digit3 = False
-        digit5 = False
-        print(i)
-        digits = getDigit(i)
-        if(3 in digits):
+    for n in range(1,inputRange):
+        i = base5Number(n)
+        result = ""
+        if(i % 3 == 0):
             result = "Fizz"
-            digit3 = True
-
-        if(5 in digits):
+        if(i % 5 == 0):
             result = "Buzz"
-            digit5 = True
-            if(digit3):
+            if(i % 3 == 0):
                 result = "Fizz Buzz"
-                print(result)
-
+        if(result == ""):
+            result = i
         resultList.append(result)
     return resultList
 
- """
+print(fizzBuzz(3))

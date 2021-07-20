@@ -6,6 +6,12 @@
 
 #Learnings: List starts at 0, remove element at index use del list[index], normal insert(index,value), it will not replace it will move the list to the left example ['Fizz', 1, 2, 3, 4, 5, 6, 7, 8, 9] insert at zeroth position.
 
+# delete operation: delete the element and move the entire list left , this may be causing performance delay
+#50 lakh inputs time taken 75seconds
+# for 50 lakh inputs delete is taking extra 10 seconds
+# removing one for loop took 53 seconds
+#removing second for loop took 36 seconds
+
 def processInput(input):
     inputType = type(input)
     print(inputType)
@@ -51,9 +57,9 @@ def fizzBuzzv5(inputRange):
 
     #print(resultList)
 fizzBuzzv5(50)
-#Profiling with 1 lakh input, extrapolation for 1 crore inputs would be 182 seconds
+#Profiling with 1 lakh input, extrapolation for 1 crore inputs would be 182 seconds 
 """ import cProfile
-cProfile.run('fizzBuzzv5(100000)') """
+cProfile.run('fizzBuzzv5(500000)') """
 
 """
          160002 function calls in 1.822 seconds
