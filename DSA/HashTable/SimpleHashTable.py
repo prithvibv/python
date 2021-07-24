@@ -15,8 +15,23 @@ def search(map,key):
         if item[0] == key:
             return item[1]
 
+def delete(map,key):
+    print("Deleting key:" + str(key))
+    for i in range(len(map)):
+        item = map[i]
+        if item[0] == key:
+            del map[i]
+    else:
+        print(str(key) + " key not found")
+
 print("Search result")
 print(search(country_code,"25"))
 
 insert(country_code,1,'Australia')
 print(country_code)
+
+delete(country_code,1)
+print(country_code)
+
+delete(country_code,12)
+
