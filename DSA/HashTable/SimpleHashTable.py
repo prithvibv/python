@@ -1,7 +1,8 @@
-# http://blog.chapagain.com.np/hash-table-implementation-in-python-data-structures-algorithms/ 
+# http://blog.chapagain.com.np/hash-table-implementation-in-python-data-structures-algorithms/
 #the elements inside the list is a tuple('25','usa')
-#Tuples are used to store multiple items in a single variable.
-#A tuple is a collection which is ordered and unchangeable.
+# Tuples are used to store multiple items in a single variable.
+# A tuple is a collection which is ordered and unchangeable.
+# List can be looped in two ways as in search function as foreach loop, second way in delete looped through index.
 country_code = [('25', 'USA'), ('20', 'India'), ('10', 'Nepal')]
 print(type(country_code))
 
