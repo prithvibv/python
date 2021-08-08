@@ -54,26 +54,8 @@ initialize empty set like tempSet = set()
 initialize set with elements
 tempSet = {1,2,3}
 """
-"""
 
-not the right approach
-O(N/2)
-tempSet = {1,2,3}
-print(type(tempSet))
-"""
-"""
-print("O(N/2)")
-array = [10, 5, 2, 3, -6, 9, 11 ]
-s = 4
-n = len(array)
-lengthby2 = int(len(array)/2) + 1
-for i in range(lengthby2):
-    j = n-1
-    if(array[i]+array[j] == s):
-         print( "O(N/2)Pair found:" + str(array[j]) +" "+str(array[i]))
-    j = j -1
 
- """
 
 
 
