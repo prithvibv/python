@@ -46,13 +46,18 @@ for i in range(len(array)):
     x = 4 - array[i]
     if(x in tempSet):
         print( "Pair found:" + str(x) +" "+str(array[i]))
-    else:
-        tempSet.add(array[i])
+        result = (x,array[i])
+        print(result)
+
+    tempSet.add(array[i])
 """
 Set learnings:
 initialize empty set like tempSet = set()
 initialize set with elements
 tempSet = {1,2,3}
+
+#tuple learnings:
+tuple_ex = ("apple","banana","grapes")
 """
 
 
