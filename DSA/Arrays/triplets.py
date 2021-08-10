@@ -55,3 +55,6 @@ random.sort(key=takeSecond)
 # print list
 print('Sorted list:', random)
 """
+"""
+Maintain a list on how to solve the problem with 2 lines description
+"""
