@@ -60,6 +60,10 @@ tempSet = {1,2,3}
 tuple_ex = ("apple","banana","grapes")
 """
 
+"""
+two pair will work if the array is sorted , i was trying with an unsorted array so things did not work out
+"""
+
 
 
 
