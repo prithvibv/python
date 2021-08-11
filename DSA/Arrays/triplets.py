@@ -58,3 +58,9 @@ print('Sorted list:', random)
 """
 Maintain a list on how to solve the problem with 2 lines description
 """
+"""
+1,2,3,4,5(i),6,7(k)
+n-2 because we have loop till last but one element, as last element is held by k
+prateek is using <=n-3
+important problem asked in most companies.
+"""
