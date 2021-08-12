@@ -82,12 +82,14 @@ for k in range(rangeLimit):
     j=len(array)-1
 
     while(i<j):
-        if(array[i]+array[j] == sum):
-            print((array[i],array[j]))
+        current_sum = array[k]
+        current_sum += array[i]
+        current_sum += array[j]
+        if(current_sum == sum):
+            print((array[k],array[i],array[j]))
             i = i + 1
             j = j - 1
-        if(array[i]+array[j] < sum):
+        if(current_sum < sum):
             i = i + 1
-        if(array[i]+array[j] > sum):
+        if(current_sum > sum):
             j = j - 1
-# need to eliminate duplicates
