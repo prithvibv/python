@@ -63,4 +63,31 @@ Maintain a list on how to solve the problem with 2 lines description
 n-2 because we have loop till last but one element, as last element is held by k
 prateek is using <=n-3
 important problem asked in most companies.
+n-3 more understading is required
+we need to have atleast 4 elements to start with , other wise it will only 3 elements and we could easily compute the result.No need for algorithm.
 """
+array = [13, 1, 43, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15]
+sum = 18
+
+array.sort()
+# (length - 3) because we need at min of 4 elements else we will have 3 elements and can directly compute the sum.
+# The for loop range it prints till the limit specified
+rangeLimit = len(array) - 3
+""" print(array)
+print("length"+str(len(array)))
+for k in range(rangeLimit):
+    print(array[k]) """
+for k in range(rangeLimit):
+    i=k+1
+    j=len(array)-1
+
+    while(i<j):
+        if(array[i]+array[j] == sum):
+            print((array[i],array[j]))
+            i = i + 1
+            j = j - 1
+        if(array[i]+array[j] < sum):
+            i = i + 1
+        if(array[i]+array[j] > sum):
+            j = j - 1
+# need to elminate duplicates
