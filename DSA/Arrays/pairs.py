@@ -66,7 +66,7 @@ two pair will work if the array is sorted , i was trying with an unsorted array 
 # two pointer solution
 # 1 must be a sorted array
 # 2 keep first pointer i at first element and j at last element, if sum of two elements less than target sum increment i pointer (starting pointer) and sum of 2 elements greater than target sum decrement the j the last pointer.
-array = [1, 2, 3, 4, 5, 6, 7, 8, 9,10, 15]
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15]
 sum = 18
 
 sortedArray = array.sort()
@@ -77,7 +77,8 @@ j=len(array)-1
 while(i<j):
     if(array[i]+array[j] == sum):
         print((array[i],array[j]))
-        break
+        i = i + 1
+        j = j - 1
     if(array[i]+array[j] < sum):
         i = i + 1
     if(array[i]+array[j] > sum):
