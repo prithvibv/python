@@ -90,4 +90,4 @@ for k in range(rangeLimit):
             i = i + 1
         if(array[i]+array[j] > sum):
             j = j - 1
-# need to elminate duplicates
+# need to eliminate duplicates
