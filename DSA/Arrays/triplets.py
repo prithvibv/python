@@ -72,6 +72,7 @@ sum = 18
 array.sort()
 # (length - 3) because we need at min of 4 elements else we will have 3 elements and can directly compute the sum.
 # The for loop range it prints till the limit specified
+#1(i),2(j),3,4(k)
 rangeLimit = len(array) - 3
 """ print(array)
 print("length"+str(len(array)))
