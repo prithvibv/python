@@ -28,7 +28,7 @@ input = [1,9,3,0,18,5,2,4,10,7,12,6,8]
 longestBand(input) """
 
 def longestBand(input):
-    mySet = set(input) # new learnings
+    mySet = set(input) # new learnings init a set with a list
     result = []
     print(type(mySet))
     for i in range (len(input)):
