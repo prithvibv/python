@@ -29,3 +29,58 @@ def kwArgs(**kwargs):
         print ("%s == %s" %(key, value))
 
 kwArgs(a=1,b=2,c=3)
+
+a_dict = [
+    {
+        "name": "gara",
+        "power": "some sand related jutsu",
+        "powerlevel": 199,
+        "frieds": [
+            {
+                "name": "Naruto",
+                "friend_points": 28,
+                "enemies": ["Saitama"]
+            },
+            {
+                "name": "Boruto",
+                "friend_points": 18,
+                "enemies": ["Saitama"]
+            }
+        ]
+    },
+    {
+        "name": "Alex",
+        "power": "some titans powers",
+        "powerlevel": 1199,
+        "frieds": [
+            {
+            "name": "Soniya",
+            "friend_points": 128,
+            "enemies": ["Saitama"]
+            }
+        ]
+    },
+    {
+        "name": "King",
+        "power": "some titans powers",
+        "powerlevel": 1199,
+        "frieds": [
+            {
+            "name": "Saitama",
+            "friend_points": 128,
+            "enemies": ["Naruto", "gara", "boruto"]
+            }
+        ]
+    }
+
+]
+
+for listElement in a_dict:
+    print(listElement["name"])
+    print(listElement["power"])
+    print(listElement["powerlevel"])
+    print(listElement["frieds"][0]["name"])
+    print(listElement["frieds"][0]["friend_points"])
+    enemies = listElement["frieds"][0]["enemies"]
+    for enemy in enemies:
+        print(enemy)
