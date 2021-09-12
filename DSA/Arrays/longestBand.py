@@ -33,6 +33,7 @@ def longestBand(input):
     print(type(mySet))
     for i in range (len(input)):
         # check if parent element is there else its the parent
+        # if there is an element lesser than the current element then its not a parent
         if(not( input[i] - 1 in mySet)):
             print("Parent element"+str(input[i]))
             parent = input[i]
